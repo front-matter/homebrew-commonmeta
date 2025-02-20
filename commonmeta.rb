@@ -5,20 +5,20 @@
 class Commonmeta < Formula
   desc ""
   homepage ""
-  version "0.6.58"
+  version "0.6.59"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/front-matter/commonmeta/releases/download/v0.6.58/commonmeta_Darwin_x86_64.tar.gz"
-      sha256 "87ad030f571de316de2dcd42beb03ee12f506ebd3e1fde4b507661efc866b255"
+      url "https://github.com/front-matter/commonmeta/releases/download/v0.6.59/commonmeta_Darwin_x86_64.tar.gz"
+      sha256 "1b2c29c481f977f80a0d251e67ad204f7a3a2a5b4ecf23c8ca56980acf1a6f1c"
 
       def install
         bin.install "commonmeta"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/front-matter/commonmeta/releases/download/v0.6.58/commonmeta_Darwin_arm64.tar.gz"
-      sha256 "2219e076cabc9cbcb2c7892581e091d9669cc1d2433dda778ccb1a8f123755ea"
+      url "https://github.com/front-matter/commonmeta/releases/download/v0.6.59/commonmeta_Darwin_arm64.tar.gz"
+      sha256 "1a0ba7062c33f6dc31c07cae58ad4a80e02a70500c31ddfa6dada5f9ba23874b"
 
       def install
         bin.install "commonmeta"
@@ -29,8 +29,8 @@ class Commonmeta < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/front-matter/commonmeta/releases/download/v0.6.58/commonmeta_Linux_x86_64.tar.gz"
-        sha256 "6ef7c1b68c70a290ca926875f9fde7583071cea56ac1e3220db8970806e30998"
+        url "https://github.com/front-matter/commonmeta/releases/download/v0.6.59/commonmeta_Linux_x86_64.tar.gz"
+        sha256 "5e1aba13529727e08a5a7ba463697ed489765c349dd4c1fc82dee3ace18375b7"
 
         def install
           bin.install "commonmeta"
@@ -39,8 +39,8 @@ class Commonmeta < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/front-matter/commonmeta/releases/download/v0.6.58/commonmeta_Linux_arm64.tar.gz"
-        sha256 "fa06600a707bfa778785a58b5ec5c4758f72d78d903816c0f085ee9c31c85930"
+        url "https://github.com/front-matter/commonmeta/releases/download/v0.6.59/commonmeta_Linux_arm64.tar.gz"
+        sha256 "3cd94051b7498b3eb4d5bf16a35644fdfa701c0e1825df0ccd2ab8e7b4f3cc05"
 
         def install
           bin.install "commonmeta"
