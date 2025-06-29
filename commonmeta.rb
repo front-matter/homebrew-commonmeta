@@ -5,20 +5,20 @@
 class Commonmeta < Formula
   desc ""
   homepage ""
-  version "0.29.1"
+  version "0.30.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/front-matter/commonmeta/releases/download/v0.29.1/commonmeta_Darwin_x86_64.tar.gz"
-      sha256 "15e9aaec56496f81f67cf0acc122bdd7218a847594e585066475a12674fd1306"
+      url "https://github.com/front-matter/commonmeta/releases/download/v0.30.0/commonmeta_Darwin_x86_64.tar.gz"
+      sha256 "8777fca3b305da5e803f536d0271462cfb584e0a52932ac4b9417281e2f92659"
 
       def install
         bin.install "commonmeta"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/front-matter/commonmeta/releases/download/v0.29.1/commonmeta_Darwin_arm64.tar.gz"
-      sha256 "ceca1814cbd25807ee428587b6f1b69640f8c85084477ee9b77fb0b74ada3d6b"
+      url "https://github.com/front-matter/commonmeta/releases/download/v0.30.0/commonmeta_Darwin_arm64.tar.gz"
+      sha256 "c685ac5e9d7545a6225d85f0555ff063d055f738c30e86e08e58692b488ed598"
 
       def install
         bin.install "commonmeta"
@@ -28,15 +28,15 @@ class Commonmeta < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/front-matter/commonmeta/releases/download/v0.29.1/commonmeta_Linux_x86_64.tar.gz"
-      sha256 "919b762336607e4a20a4af4fc617771a3674f180afa369fa5aa0ba32986c1e56"
+      url "https://github.com/front-matter/commonmeta/releases/download/v0.30.0/commonmeta_Linux_x86_64.tar.gz"
+      sha256 "a69043e61feffa238f0aa2a9c72c91084d9714172427f39c4637a86bb6de3250"
       def install
         bin.install "commonmeta"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/front-matter/commonmeta/releases/download/v0.29.1/commonmeta_Linux_arm64.tar.gz"
-      sha256 "2771758cb344d2840c1d4312f95d7f85cda510f8bdbd9ede1e9168eb5300ddf6"
+      url "https://github.com/front-matter/commonmeta/releases/download/v0.30.0/commonmeta_Linux_arm64.tar.gz"
+      sha256 "82a5026f50225aeb36facc302ad3a961407520401945da1a8778f18f78d9e162"
       def install
         bin.install "commonmeta"
       end
